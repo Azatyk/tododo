@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Criteria-CF';
+  src: url('@/assets/fonts/criteriacf-regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Criteria-CF';
+  src: url('@/assets/fonts/criteriacf-medium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Criteria-CF';
+  src: url('@/assets/fonts/criteriacf-bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Criteria-CF';
+  src: url('@/assets/fonts/criteriacf-light.otf');
+  font-weight: 300;
+}
