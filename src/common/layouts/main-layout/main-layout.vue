@@ -21,7 +21,7 @@ import layoutHeader from './components/layout-header.vue'
 }
 
 .layout__content {
-  padding: 40px 40px 0 40px;
+  padding: 40px 80px 0 80px;
   box-sizing: border-box;
   width: 100%;
 }

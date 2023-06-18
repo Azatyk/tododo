@@ -26,8 +26,8 @@ defineProps({
   font-size: 15px;
   font-weight: 300;
   font-family: 'Criteria-CF', sans-serif;
-  border: 1px solid var(--dark-color);
-  border-radius: 4px;
+  border: var(--border);
+  border-radius: var(--border-radius);
   background-color: transparent;
   cursor: pointer;
 }
