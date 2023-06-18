@@ -46,9 +46,12 @@ const updateValue = (event: Event) => {
 }
 
 .common-input__field {
-  padding: 14px 0 14px 14px;
+  padding: 14px 6px 14px 14px;
   box-sizing: border-box;
   width: 100%;
+  font-family: 'Criteria-CF', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
   background-color: var(--white-color);
   border: 1px solid var(--dark-color);
   border-radius: var(--border-radius);
@@ -57,7 +60,7 @@ const updateValue = (event: Event) => {
 }
 
 .common-input__field:focus {
-  padding-left: 17px;
+  padding-left: 16px;
 }
 
 .common-input::placeholder {
