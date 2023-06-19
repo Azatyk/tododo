@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import commonInput from '@/common/components/common-input.vue'
 import commonTextarea from '@/common/components/common-textarea.vue'
+import commonButton from '@/common/components/common-button.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import commonTextarea from '@/common/components/common-textarea.vue'
       placeholder="Tell a little more about task"
       class="create-task-form__field"
     />
+    <common-button class="create-task-form__button">Add task</common-button>
   </form>
 </template>
 
@@ -42,5 +44,9 @@ import commonTextarea from '@/common/components/common-textarea.vue'
 
 .create-task-form__field:last-child {
   margin-bottom: 0;
+}
+
+.create-task-form__button {
+  width: 100%;
 }
 </style>

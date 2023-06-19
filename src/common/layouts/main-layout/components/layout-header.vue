@@ -5,7 +5,7 @@ import commonButton from '@/common/components/common-button.vue'
 <template>
   <header class="layout-header">
     <span class="layout-header__logo">Tododo</span>
-    <common-button>Something after</common-button>
+    <common-button type="secondary">Something after</common-button>
   </header>
 </template>
 
