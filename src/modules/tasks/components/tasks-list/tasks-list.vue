@@ -1,9 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import taskCard from '../tasks-list/components/task-card/task-card.vue'
+</script>
 
 <template>
   <div class="tasks-list">
     <div class="tasks-list__header">
       <h2 class="tasks-list__heading">Your tasks</h2>
+      <task-card v-for="index in 3" :key="index" class="tasks-list__task" />
     </div>
   </div>
 </template>
@@ -24,9 +27,17 @@
 }
 
 .tasks-list__heading {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   color: var(--dark-color);
   font-size: 20px;
   font-weight: 500;
+}
+
+.tasks-list__task {
+  margin-bottom: 24px;
+}
+
+.tasks-list__task:last-child {
+  margin-bottom: 0;
 }
 </style>

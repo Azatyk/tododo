@@ -5,7 +5,7 @@ import commonButton from '@/common/components/common-button.vue'
 </script>
 
 <template>
-  <form class="create-task-form">
+  <form @submit.prevent class="create-task-form">
     <h2 class="create-task-form__heading">Add new task</h2>
     <common-input
       label="Title"
