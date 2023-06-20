@@ -24,11 +24,11 @@ const updateValue = (event: Event) => {
       {{ label }}
     </label>
     <input
-      @input="updateValue"
       :placeholder="placeholder"
       type="text"
       id="common-input__field"
       class="common-input__field"
+      @input="updateValue"
     />
   </div>
 </template>

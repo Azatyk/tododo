@@ -1,13 +1,28 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue'
+import commonCheckbox from '@/common/components/common-checkbox.vue'
+
+defineProps({
+  uniqueKey: {
+    type: String,
+    required: true
+  }
+})
+
+const taskCompleted = ref(false)
+</script>
 
 <template>
   <div class="task-card">
     <div class="task-card__row">
       <h3 class="task-card__heading">Buy milk and bread</h3>
-      <div class="task-card__actions"></div>
+      <div class="task-card__actions">
+        <common-checkbox v-model="taskCompleted" :unique-key="uniqueKey" />
+      </div>
     </div>
     <p class="task-card__description">
-      Do NOT buy milk >10% fat content and try to find black bread without poppy seeds
+      Do NOT buy milk less then 10 percent fat content and try to find black bread without poppy
+      seeds. Second point is not such important as first
     </p>
   </div>
 </template>
@@ -32,7 +47,7 @@
 }
 
 .task-card__row {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -42,6 +57,10 @@
 .task-card__heading {
   font-size: 16px;
   font-weight: 400;
+}
+
+.task-card__actions {
+  margin-right: 10px;
 }
 
 .task-card__description {

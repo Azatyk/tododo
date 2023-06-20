@@ -6,7 +6,12 @@ import taskCard from '../tasks-list/components/task-card/task-card.vue'
   <div class="tasks-list">
     <div class="tasks-list__header">
       <h2 class="tasks-list__heading">Your tasks</h2>
-      <task-card v-for="index in 3" :key="index" class="tasks-list__task" />
+      <task-card
+        v-for="index in 3"
+        :key="index"
+        :unique-key="index.toString()"
+        class="tasks-list__task"
+      />
     </div>
   </div>
 </template>
