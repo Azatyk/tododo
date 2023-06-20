@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import commonCheckbox from '@/common/components/common-checkbox.vue'
+import commonLinkButton from '@/common/components/common-link-button.vue'
 
 defineProps({
   uniqueKey: {
@@ -17,6 +18,7 @@ const taskCompleted = ref(false)
     <div class="task-card__row">
       <h3 class="task-card__heading">Buy milk and bread</h3>
       <div class="task-card__actions">
+        <common-link-button class="task-card__action">Delete</common-link-button>
         <common-checkbox v-model="taskCompleted" :unique-key="uniqueKey" />
       </div>
     </div>
@@ -61,12 +63,18 @@ const taskCompleted = ref(false)
 
 .task-card__actions {
   margin-right: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.task-card__action {
+  margin-right: 16px;
 }
 
 .task-card__description {
-  width: 100%;
+  width: calc(100% - 50px);
   color: var(--dark-color);
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 300;
   opacity: 0.6;
 }
